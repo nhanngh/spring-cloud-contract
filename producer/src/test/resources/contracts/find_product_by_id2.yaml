@@ -1,0 +1,12 @@
+request:
+  method: GET
+  url: /product/2
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 2
+    name: Dell
+    description: OS windows
+    price: 1500

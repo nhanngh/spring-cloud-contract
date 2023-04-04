@@ -1,0 +1,8 @@
+request:
+  method: GET
+  url: /customer/1
+response:
+  status: 200
+  headers:
+    Content-Type: text/plain;charset=ISO-8859-1
+  body: "harry"

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-04-01T10:58:36.915+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/merchant/customer/1"
+}

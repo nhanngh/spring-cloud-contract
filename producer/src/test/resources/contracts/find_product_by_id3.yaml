@@ -1,0 +1,6 @@
+description: should return 404 for product id = 3
+request:
+  method: GET
+  url: /product/3
+response:
+  status: 404

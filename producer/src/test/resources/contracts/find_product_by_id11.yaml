@@ -1,0 +1,13 @@
+description: get data from database
+request:
+  method: GET
+  url: /product/db/11
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 11
+    name: test
+    description: just only test
+    price: 3500

@@ -1,0 +1,12 @@
+request:
+  method: GET
+  url: /product/1
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 1
+    name: Macbook 20152
+    description: OS mac os
+    price: 2000

@@ -1,0 +1,10 @@
+GET http://localhost:8080/customer/1
+Accept: application/json
+
+###
+GET http://localhost:8080/product/1
+Accept: application/json
+
+###
+GET http://localhost:8080/product/db/11
+Accept: application/json
