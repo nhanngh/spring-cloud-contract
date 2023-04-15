@@ -18,7 +18,7 @@ public class ProductController {
   public String getProductName(@PathVariable Long id) {
     restTemplate = new RestTemplate();
     ResponseEntity<Product> productResponseEntity = restTemplate.exchange(
-        "http://localhost:8081/product/{productId}", HttpMethod.GET, null, Product.class, id);
+        "http://localhost:8080/product/{productId}", HttpMethod.GET, null, Product.class, id);
     return productResponseEntity.getBody().getName();
   }
 
@@ -26,7 +26,7 @@ public class ProductController {
   public String getCustomerName(@PathVariable Long id) {
     restTemplate = new RestTemplate();
     ResponseEntity<String> productResponseEntity = restTemplate.exchange(
-        "http://localhost:8081/customer/{customerId}", HttpMethod.GET, null, String.class, id);
+        "http://localhost:8080/customer/{customerId}", HttpMethod.GET, null, String.class, id);
     return productResponseEntity.getBody();
   }
 }
