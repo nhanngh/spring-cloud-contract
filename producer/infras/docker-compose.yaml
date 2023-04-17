@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:15
+    ports:
+      - 35438:5432
+    environment:
+      POSTGRES_USER: bkit
+      POSTGRES_PASSWORD: bkit
+      POSTGRES_DB: hdss
