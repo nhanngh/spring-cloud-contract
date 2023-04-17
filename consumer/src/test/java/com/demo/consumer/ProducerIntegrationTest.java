@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
 import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties.StubsMode;
@@ -19,6 +20,8 @@ import org.springframework.web.client.RestTemplate;
 @AutoConfigureStubRunner(ids = {
     "com.demo:producer:0.0.1-SNAPSHOT:stubs:8080"}, stubsMode = StubsMode.LOCAL)
 class ProducerIntegrationTest {
+  @Mock
+  RestTemplate producerRestTemplate;
 
   @Test
   void get_product1() {
